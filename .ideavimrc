@@ -1,0 +1,77 @@
+let mapleader = "\<space>"
+
+set easymotion
+set ignorecase
+set clipboard
+set nu
+set rnu
+set showmode
+set visualbell
+set noerrorbells
+set hls
+
+set sneak
+let g:sneak#label = 1
+
+imap jk <ESC>:w<CR>
+
+nnoremap <leader><leader>s :w<CR>
+vnoremap <leader><leader>s :w<CR>
+
+nnoremap <leader><leader>r :action RenameElement<CR>
+vnoremap <leader><leader>r :action RenameElement<CR>
+
+nnoremap <leader><leader>h :map <CR>
+vnoremap <leader><leader>h :map <CR>
+
+nnoremap <leader><leader>f :action ReformatCode<CR>
+vnoremap <leader><leader>f :action ReformatCode<CR>
+
+nnoremap <leader><leader>e :action ActivateProjectToolWindow<CR>
+vnoremap <leader><leader>e :action ActivateProjectToolWindow<CR>
+
+nnoremap <leader>cl :action CommentByLineComment<CR>
+vnoremap <leader>cl :action CommentByLineComment<CR>
+
+nnoremap <leader>cb :action CommentByBlockComment<CR>
+vnoremap <leader>cb :action CommentByBlockComment<CR>
+
+nnoremap <leader>se :action SearchEverywhere<CR>
+vnoremap <leader>se :action SearchEverywhere<CR>
+
+nnoremap <leader>nt :action NextTab<CR>
+vnoremap <leader>nt :action NextTab<CR>
+nnoremap <leader>pt :action PreviousTab<CR>
+vnoremap <leader>pt :action PreviousTab<CR>
+
+
+nnoremap <leader>ns :action NextSplitter<CR>
+vnoremap <leader>ns :action NextSplitter<CR>
+nnoremap <leader>ps :action PrevSplitter<CR>
+vnoremap <leader>ps :action PrevSplitter<CR>
+
+
+nnoremap <leader>us :action Unsplit<CR>
+vnoremap <leader>us :action Unsplit<CR>
+nnoremap <leader>usa :action UnsplitAll<CR>
+vnoremap <leader>usa :action UnsplitAll<CR>
+nnoremap <leader>sv :action SplitVertically<CR>
+vnoremap <leader>sv :action SplitVertically<CR>
+nnoremap <leader>sh :action SplitHorizontally<CR>
+vnoremap <leader>sh :action SplitHorizontally<CR>
+
+nnoremap <leader><leader><leader> :action HideAllWindows<CR>
+vnoremap <leader><leader><leader> :action HideAllWindows<CR>
+
+nnoremap <leader>j 15j
+vnoremap <leader>j 15j
+nnoremap <leader><leader>j 30j
+vnoremap <leader><leader>j 30j
+nnoremap <leader>k 15k
+vnoremap <leader>k 15k
+nnoremap <leader><leader>k 30k
+vnoremap <leader><leader>k 30k
+
+nnoremap <leader>rc :action CollapseAllRegions<CR>
+nnoremap <leader>t ~h
+vnoremap <leader>t ~h
